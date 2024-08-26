@@ -1,6 +1,6 @@
 // models/Interview.js
 const mongoose = require('mongoose');
-const { v4: uuidv4 } = require('uuid');
+
 
 // Define the interview schema
 const interviewSchema = new mongoose.Schema({
@@ -31,9 +31,7 @@ const interviewSchema = new mongoose.Schema({
   },
   mockId: {
     type: String,
-    default: function() {
-      return uuidv4(); // Automatically generate a unique mockId using uuid
-    }
+    
   }
 });
 
