@@ -12,7 +12,7 @@ app.use(express.json());
 
 // CORS Configuration
 const allowedOrigins = [
-  'http://localhost:5173', // Local development URL
+  
   'https://ai-interview-app-red.vercel.app', // Vercel deployment URL
   // Add more allowed origins if needed
 ];
