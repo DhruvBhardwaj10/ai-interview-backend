@@ -12,16 +12,9 @@ app.use(express.json());
 
 // CORS Configuration
 const allowedOrigins = [
-  
   'https://ai-interview-app-red.vercel.app', // Vercel deployment URL
   // Add more allowed origins if needed
 ];
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://ai-interview-app-red.vercel.app');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-  next();
-});
-
 
 app.use(cors({
   origin: (origin, callback) => {
